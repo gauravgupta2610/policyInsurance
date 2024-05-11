@@ -7,19 +7,30 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import GroupIcon from "../icon/groupIcon";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import InfoIcon from "../icon/infoIcon";
 import DataBase from "../const/dataBase.json";
 import InfoCard from "./infoCard";
+import { dependentList } from "../services/employeeServices";
+import { dependentProps } from "../propTypes";
 
 type PolicyDependentListProps = {
-  empId: number;
+  empId: string;
 };
 
 const PolicyDependentList = ({ empId }: PolicyDependentListProps) => {
-  const emplyeeDetail = DataBase.filter((val) => empId === val.id);
+  // const emplyeeDetail = DataBase.filter((val) => empId === val.id);
+  const [emplyeeDetail, setEmployeeDetail] = useState<dependentProps[]>();
+  const getDependentList = async (empId:string) => {
+    const data = await dependentList(empId);
+    setEmployeeDetail(data);
+  }
+
+  useEffect(()=> {
+    getDependentList(empId);
+  }, [empId])
 
   return (
     <Box>
@@ -63,7 +74,7 @@ const PolicyDependentList = ({ empId }: PolicyDependentListProps) => {
                   <Typography>Policy Dependents</Typography>
                 </Box>
                 <Box>
-                  <Typography>`{(emplyeeDetail[0].dependents).length + 1}/4`</Typography>
+                  <Typography>{(emplyeeDetail || []).length}/{(emplyeeDetail || []).length}</Typography>
                 </Box>
               </Box>
             </AccordionSummary>
@@ -95,13 +106,13 @@ const PolicyDependentList = ({ empId }: PolicyDependentListProps) => {
                   </Box>
                 </Box>
                 <Box>
-                  <InfoCard
+                  {/* <InfoCard
                     name={emplyeeDetail[0].name}
                     relation={emplyeeDetail[0].relation}
                     dob={emplyeeDetail[0].dob}
                     keepButton={false}
-                  />
-                  {emplyeeDetail[0].dependents.map((val, index) => {
+                  /> */}
+                  {emplyeeDetail && emplyeeDetail.map((val, index) => {
                     return (
                       <InfoCard
                         name={val.name}

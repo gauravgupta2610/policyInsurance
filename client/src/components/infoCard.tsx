@@ -22,7 +22,7 @@ const InfoCard = ({
   handleDelete,
   setSelectedEmployee,
 }: InfoCardPorps) => {
-  const handleEmployeeClick = (employeeId: number) => {
+  const handleEmployeeClick = (employeeId: string) => {
     if (employeeId && setSelectedEmployee) setSelectedEmployee(employeeId);
   };
 
@@ -31,7 +31,7 @@ const InfoCard = ({
       sx={{
         display: "flex",
         border: "1px solid ",
-        borderColor: selectedEmployee === userId ? '#27378C' : "#E0E0E0",
+        borderColor: selectedEmployee == userId ? '#27378C' : "#E0E0E0",
         height: "10vh",
         borderRadius: "8px",
         padding: "16px",

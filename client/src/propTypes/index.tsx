@@ -20,7 +20,7 @@ export type LeftDrawerProps = {
 }
 
 export type InfoCardPorps = {
-  userId?: number;
+  userId?: string;
   depId?: string;
   name: string;
   dob?: string;
@@ -28,14 +28,14 @@ export type InfoCardPorps = {
   relation: string;
   roleType?: boolean;
   keepButton?: boolean;
-  selectedEmployee?: number;
+  selectedEmployee?: string;
   handleEdit?: any;
   handleDelete?: any;
-  setSelectedEmployee?: (employeeId: number) => void;
+  setSelectedEmployee?: (employeeId: string) => void;
 };
 
 export type EmployeeListProps = {
-  id?: number;
+  id?: string;
   name: string;
   userName: string;
   role: string;

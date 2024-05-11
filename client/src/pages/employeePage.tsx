@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SideBar from "../components/sideBar";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import TopBar from "../components/topBar";
-import ProjectConst from "../const/projectConstants.json";
 import InfoCard from "../components/infoCard";
 import NotSelected from "../components/notSelected";
-import DataBase from "../const/dataBase.json"
 import { employeeList } from "../services/employeeServices";
 import { EmployeeListProps } from "../propTypes";
 import PolicyDependentList from "../components/policyDependentList";
@@ -13,8 +11,7 @@ import PolicyDependentList from "../components/policyDependentList";
 
 const EmployeePage = () => {
   const roleType = true;
-  const name = DataBase[0].name
-  const [selectedEmployee, setSelectedEmployee] = useState<number>(0);
+  const [selectedEmployee, setSelectedEmployee] = useState<string>("");
   const [employeesListArr, setEmployeesList] = useState<EmployeeListProps[]>([]);
 
   const getEmployeeList = async () => {

@@ -2,7 +2,7 @@
 
 ### Technology used
 - React on the client side
-- Node.js/Express on the server side
+- Node.js(version v20.9.0) /Express on the server side
 
 ## Instructions on installation and running
 The code is split into two parts:
@@ -19,3 +19,11 @@ The application needs both the server and the client to run concurrently. In the
 - Change to the `client` directory
 - run `yarn install` to install dependencies
 - run `yarn start` to run the client at http://localhost:3000
+
+### Credential for Employee
+- username : gauravEmployee
+- password: 1234
+
+### Credential for HR
+- username : gauravHR
+- password: 1234

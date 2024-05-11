@@ -90,7 +90,7 @@ const DependentList = ({ userId }: { userId: string }) => {
               {dependentListArr.map((val, index) => {
                 return (
                   <InfoCard
-                    userId={parseInt(userId)}
+                    userId={userId}
                     roleType={roleType}
                     depId={val.id}
                     handleEdit={handleEdit}
