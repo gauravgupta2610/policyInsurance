@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Gaurav Gupta",
+    "userName": "gauravHR",
+    "role": "HR_MANAGER",
+    "password": "1234"
+  },
+  {
+    "id": 2,
+    "name": "Gaurav Gupta",
+    "userName": "gauravEmployee",
+    "role": "EMPLOYEE",
+    "company_id": "EMP0001",
+    "designation": "Developer",
+    "doj": "2024-04-29",
+    "dob": "2024-04-29",
+    "gender": "M",
+    "password": "1234",
+    "dependents": [
+      {
+        "id": 1,
+        "name": "Mahesh",
+        "dob": "2024-05-02",
+        "relation": "spouse"
+      },
+      {
+        "id": 2,
+        "name": "Kavitas",
+        "dob": "2024-04-30",
+        "relation": "mother"
+      },
+      {
+        "id": "5750dbae-07c7-4924-ba9f-d0b435e16095",
+        "name": "Kamlesh",
+        "dob": "2024-04-30",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hritik Gupta",
+    "userName": "hritikEmployee",
+    "role": "EMPLOYEE",
+    "company_id": "EMP0002",
+    "designation": "Developer",
+    "doj": "2024-04-29",
+    "dob": "2024-04-29",
+    "gender": "M",
+    "password": "1234",
+    "dependents": [
+      {
+        "id": 1,
+        "name": "Pankaj",
+        "dob": "2024-04-29",
+        "relation": "FATHER"
+      },
+      {
+        "id": 2,
+        "name": "Surila",
+        "dob": "2024-04-29",
+        "relation": "MOTHER"
+      },
+      {
+        "id": 3,
+        "name": "Savita",
+        "dob": "2024-04-29",
+        "relation": "SPOUSE"
+      }
+    ]
+  }
+]

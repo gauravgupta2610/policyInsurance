@@ -1,0 +1,47 @@
+body {
+  font-family: satoshi;
+}
+.homePage {
+  /* border: 1px solid #27378c; */
+  /* padding: 50; */
+}
+
+.notFound {
+  color: red;
+}
+
+.employeePage {
+  display: flex;
+}
+
+.hrPage {
+  display: flex;
+}
+
+.sideBar {
+  width: 15vw;
+  height: 100vh;
+  border-right: 1px solid #E0E0E0;
+
+  &.title {
+    padding: 24px 20px;
+    height: 72px;
+    border-bottom: 1px solid #E0E0E0;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: santoshi;
+    display: flex;
+    justify-content: left;
+    color: #1A1A1A;
+  }
+  &.option {
+    display: flex;
+    justify-content: left;
+    padding: 16px 20px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1A1A1A !important;
+    align-items: flex-start;
+  }
+}

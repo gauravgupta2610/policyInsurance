@@ -1,0 +1,68 @@
+[
+    {
+      "id": 2,
+      "name": "Gaurav Gupta",
+      "userName": "gauravEmployee",
+      "role_id": "EMPLOYEE",
+      "company_id": "EMP0001",
+      "designation": "Developer",
+      "doj": "24 May 2024",
+      "dob": "24 April 1990",
+      "gender": "M",
+      "relation":"SELF",
+      "password": "1234",
+      "dependents": [
+        {
+          "id": 1,
+          "name": "Mahesh",
+          "dob": "24 May 1970",
+          "relation": "FATHER"
+        },
+        {
+          "id": 2,
+          "name": "Kavita",
+          "dob": "24 May 1975",
+          "relation": "MOTHER"
+        },
+        {
+          "id": 3,
+          "name": "Suresh",
+          "dob": "24 May 1991",
+          "relation": "SPOUSE"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hritik Gupta",
+      "userName": "hritikEmployee",
+      "role_id": "EMPLOYEE",
+      "company_id": "EMP0002",
+      "designation": "Developer",
+      "doj": "24 May 2024",
+      "dob": "24 May 1990",
+      "gender": "M",
+      "password": "1234",
+      "relation":"SELF",
+      "dependents": [
+        {
+          "id": 1,
+          "name": "Pankaj",
+          "dob": "24 June 1970",
+          "relation": "FATHER"
+        },
+        {
+          "id": 2,
+          "name": "Surila",
+          "dob": "24 June 1975",
+          "relation": "MOTHER"
+        },
+        {
+          "id": 3,
+          "name": "Savita",
+          "dob": "24 June 1991",
+          "relation": "SPOUSE"
+        }
+      ]
+    }
+  ]
